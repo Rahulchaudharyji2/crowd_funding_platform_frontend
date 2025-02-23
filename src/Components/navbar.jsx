@@ -46,6 +46,9 @@ const Navbar = (props) => {
             <li style={{ float: "right" }}>
               <Link to="/contact-us">CONTACT US</Link>
             </li>
+            <li style={{ float: "right" }}>
+              <Link to="/contact-us">Login</Link>
+            </li>
             {localStorage.getItem("token") && (
               <li style={{ float: "right" }}>
                 <Link to="/admin/dashboard">Admin-Dashboard</Link>
@@ -60,7 +63,7 @@ const Navbar = (props) => {
 
 export default Navbar;
 
-/* <div className={styles.bodyPadding}></div> */
+/* <div className={styles.bodyPadding}></div> 
 
 /* <nav className={`sticky-top ${styles.navbar}`}>
   <ul className={navBackground}>

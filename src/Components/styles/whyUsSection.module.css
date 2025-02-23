@@ -15,10 +15,11 @@
 }
 
 .image {
-  border: 1.2vw solid rgba(21, 215, 180, 1);
+  border: 0.8vw solid #27667B;
   z-index: 1;
   width: 100%;
   image-rendering: pixelated;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 1000px) {

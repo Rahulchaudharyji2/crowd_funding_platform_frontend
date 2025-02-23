@@ -7,8 +7,8 @@ const ImageLanding = (props) => {
     <React.Fragment>
       <div className={styles.backgroundImage}>
         <div className={styles.title}>
-          <p className={styles.text}> ROTARACT IIITM</p>
-          <p className={styles.header}> You Bestow, We Deliver</p>
+        <p className={styles.header}> CrowdHiveAi</p>
+          <p className={styles.text}>  Empowering Tech Startups with AI-Driven Crowdfunding </p>
         </div>
         <Link
           to="Donate"
@@ -19,7 +19,7 @@ const ImageLanding = (props) => {
           duration={500}
         >
           <button className={`btn btn-success p-3 ${styles.donateBtn}`}>
-            DONATE NOW
+            INVEST NOW
           </button>
         </Link>
       </div>
