@@ -1,106 +1,63 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import logo from "./assets/RotaractIcon.png";
-import styles from "./styles/footer.module.css";
+//import logo from "./assets/RotaractIcon.png";
+import "./styles/footer.css"; // Updated to use a CSS file
 
 const Footer = () => {
   return (
-    <footer className={`mb-0 p-4 ${styles.footer}`}>
-      <div className="row">
-        <div className={`col-12 col-sm-6 col-md-4 ${styles.left}`}>
-          <a href="/">
-            <img className={`${styles.logo}`} src={logo} alt="ROTARACT LOGO" />
-          </a>
-          <br />
-          <p className={`${styles.caption}`}>
-            Rotaract Club <br /> IIITM Gwalior
-          </p>
-        </div>
-        <div className={`col-12 col-sm-6 col-md-4 ${styles.middle}`}>
-          <p>
-            <b>Follow us on</b>
-          </p>
-          <a
-            className={`${styles.facebook}`}
-            href="https://www.facebook.com/rotaractiiitm/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa fa-facebook"></i>
-          </a>
-          <a
-            className={`${styles.linkedin}`}
-            href="https://in.linkedin.com/company/rotaract-club-abv-iiitm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa fa-linkedin"></i>
-          </a>
-          <br />
-          <div className={`${styles.links}`}>
-            <a className={`${styles.link}`} href="/about-us">
-              About
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-content">
+          {/* Left Section - Logo & Caption */}
+          <div className="footer-section left">
+            <a href="/">
+              <img className="footer-logo" src="./logo.png" alt="CrowdHiveAi" />
             </a>
-            <a className={`${styles.link}`} href="/contact-us">
-              Contact Us
-            </a>
-            <a
-              className={`${styles.link}`}
-              href="https://www.iiitm.ac.in/index.php/en/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ABV-IIITM
-            </a>
+            <p className="footer-caption">
+              CrowdHiveAi <br /> 
+            </p>
+          </div>
+
+          {/* Middle Section - Social Links & Navigation */}
+          <div className="footer-section middle">
+            <p className="footer-heading">Follow us on</p>
+            <div className="social-links">
+              <a href="https://www.linkedin.com/company/crowdhiveai/" target="_blank" rel="noreferrer">
+                <i className="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/crowdhiveai/" target="_blank" rel="noreferrer">
+                <i className="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <div className="footer-links">
+              <a href="/about-us">About</a>
+              <a href="/contact-us">Contact Us</a>
+              <a href="https://www.linkedin.com/company/crowdhiveai/" target="_blank" rel="noreferrer">
+              CrowdHiveAi
+              </a>
+            </div>
+          </div>
+
+          {/* Right Section - Credits & Contact */}
+          <div className="footer-section right">
+            <p className="developers">
+              <strong>Developed By</strong>
+              <br />
+              <a href="https://www.linkedin.com/company/crowdhiveai/" target="_blank" rel="noreferrer">
+                CrowdHiveAi Team
+              </a>
+
+            </p>
+            <p className="contact-info">
+              For any queries, reach out to us at <strong>crowdhiveai@gmail.com</strong>
+            </p>
           </div>
         </div>
-        <div className={`col-12 col-sm-12 col-md-4 ${styles.right}`}>
-          <p className={`${styles.names}`}>
-            <span style={{ fontWeight: "bolder" }}>Developed By </span>
-            <br />
-            <a
-              className={`${styles.name}`}
-              href="https://in.linkedin.com/in/swatik-paul-1218b3136"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Swatik Paul
-            </a>
-            <br />
-            <a
-              className={`${styles.name}`}
-              href="https://www.linkedin.com/in/vivekkamboj1/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Vivek Kamboj
-            </a>
-            <br />
-            <br />
-            <span style={{ fontWeight: "bolder" }}>Designed By </span>
-            <br />
-            <a
-              className={`${styles.name}`}
-              href="https://in.linkedin.com/in/manish-mavi-05"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Manish Mavi
-            </a>
-          </p>
-          <p>
-            For any queries, reach out to us at email
-            <br />
-            <b>rotaract@iiitm.ac.in</b>
-          </p>
-        </div>
-      </div>
 
-      <div className={`${styles.footerBottom}`}>
-        <hr className={`${styles.line}`} />
-        <p style={{ textAlign: "center" }}>
-          Copyright &copy; 2021 ROTARACT CLUB IIITM. All Rights Reserved.
-        </p>
+        {/* Footer Bottom Section */}
+        <div className="footer-bottom">
+          <hr className="footer-line" />
+          <p>&copy; 2025 CrowdHiveAi. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
   );

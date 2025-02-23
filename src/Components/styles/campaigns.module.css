@@ -9,7 +9,7 @@
 }
 
 .allContent {
-  background-color: rgba(21, 215, 180, 1);
+  background-color: rgb(21, 35, 56);
   cursor: default;
   border-radius: 12px 12px 0 0;
 }
@@ -83,7 +83,7 @@
 }
 
 .bottomSection {
-  background-color: rgba(32, 178, 170, 1);
+  background-color: rgb(4, 7, 18);
   width: 100%;
   margin: 0%;
   padding: 0%;

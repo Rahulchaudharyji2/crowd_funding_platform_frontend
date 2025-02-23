@@ -14,7 +14,7 @@ import AllCampaigns from "./Routes/allCampaigns";
 import EditCampaign from "./Routes/editCampaign";
 import DonationSuccess from "./Routes/donationSuccess";
 import DonationFailure from "./Routes/donationFailure";
-import Footer from "./Components/footer";
+
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -49,7 +49,7 @@ const App = () => {
             <Redirect to="/page-not-found" />
           </Switch>
         </div>
-        <Footer />
+        
       </div>
     </React.Fragment>
   );

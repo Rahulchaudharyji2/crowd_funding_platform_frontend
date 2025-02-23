@@ -4,12 +4,13 @@ import NavBar from "../Components/navbar_Landing";
 import ImageLanding from "../Components/image_landing";
 import OnGoingCampaigns from "../Components/onGoingCampaigns";
 import WhyUs from "../Components/whyUsSection";
-import NobelCauseComponent from "../Components/nobelCauseComponent";
-import ProudToDonate from "../Components/proudToDonateComponent";
+
 import ScrollToTop from "../Components/scrollToTop";
 import { getAllCampaigns } from "../services/campaign";
 import { compare } from "../utills/math";
-
+import HowItWorks from "../Components/howItsWork";
+import Testimonials from "../Components/testimonial";
+import Footer from "../Components/footer";
 const LandingPage = (props) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -49,8 +50,10 @@ const LandingPage = (props) => {
         data={data}
         loading={loading}
       />
-      <NobelCauseComponent />
-      <ProudToDonate />
+      <HowItWorks />
+
+      <Testimonials />
+      <Footer/>
     </React.Fragment>
   );
 };

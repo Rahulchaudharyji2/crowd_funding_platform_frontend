@@ -8,7 +8,7 @@
 }
 .header:before,
 .header:after {
-  background-color: rgba(21, 215, 180, 1);
+  background-color: rgb(15, 15, 35);
   content: "";
   display: inline-block;
   height: 5px;

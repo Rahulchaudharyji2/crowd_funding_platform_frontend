@@ -5,7 +5,7 @@ import styles from "./styles/whyUsSection.module.css";
 const WhyUs = () => {
   return (
     <React.Fragment>
-      <div className="row col-12">
+      <div className="row col-12" style={{backgroundColor :"#061217"}}>
         <div className={`col-md-8 ${styles.whyUs}`}>
           <h1 className={styles.header}>Why us ?</h1>
           <p className={styles.para}>

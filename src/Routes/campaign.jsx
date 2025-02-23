@@ -118,9 +118,9 @@ const Campaign = (props) => {
               {!campaign.subTitle && (
                 <div
                   style={{
-                    border: "2px solid rgba(21, 215, 180, 1)",
+                    border: "2px solid rgb(16, 16, 37)",
                     width: "100%",
-                    backgroundColor: "rgba(21, 215, 180, 1)",
+                    backgroundColor: "rgb(16, 16, 37)",
                   }}
                 ></div>
               )}

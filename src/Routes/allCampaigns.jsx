@@ -41,14 +41,15 @@ const AllCampaigns = (props) => {
   const pageSize = 6;
   const allCampaigns = paginate(data, currentPage, pageSize);
   return (
-    <React.Fragment>
+    <React.Fragment >
       <NavBar />
+      <div className="background" style={{backgroundColor:"rgb(4, 4, 6)"}}>
       <ScrollToTop />
       {loading && <Loader />}
-      <div className={styles.header}>
+      <div className={styles.header} style={{color:"rgb(213, 114, 9)"}}>
         <p>All Campaigns</p>
       </div>
-      <div className={`row ${styles.section}`}>
+      <div className={`row ${styles.section}`} style={{color:"white"}}>
         {allCampaigns.map((d) => (
           <div key={d._id} className={`col-md-6 col-12 ${styles.campaign}`}>
             <Campaign
@@ -69,6 +70,7 @@ const AllCampaigns = (props) => {
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
+      </div>
     </React.Fragment>
   );
 };
